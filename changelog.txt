@@ -1,0 +1,56 @@
+Golden Sun: The Lost Age Editor
+Created by Atrius (v0.5, Developer Alpha)
+Modified by Teawater (v0.0.2)
+Other credits: Salanewt
+
+
+
+v0.0.2a (Feb 23, 2013)
+
+*Map Editor: Started coding the World Map Viewer (NOT WORKING YET!)
+*Map Editor: Tile Scripts on tilemap now display on map. **Using surfaces method only.**
+*Map Editor: Placed a tileset box next to the map editor for future map editing purposes.
+*Map Editor: You can now edit 16x16 tiles, but not 8x8 tiles. It's currently very slow.
+
+Minor stuff:
+*Map Editor: Added Code file deletion for when you leave this section.
+*Map Editor: Keyboard support for layer toggling. (Might come in handy if the controls are put in a menu.)
+*Map Editor: Fixed display of scrollbar in NPC Event's box.
+*Enemy Editor: The Sequential 
+
+Thanks to Salanewt for the following:
+
+*Ability Editor: Added "types" combobox button
+*Fixed up the ability effects list to clarify on a few things
+
+
+Known problems:
+Golden Sun 1:
+-Sol Sanctum (Map 16) has layers not aligned properly.
+-Alpine Crossing (Map 74) shows incorrect graphic tiles. Needs upgrading to animated tiles.
+
+
+
+v0.0.1 - (Jan 29, 2013)
+
+*Item Editor: Added Dropped in Transfer label for GS2.
+Changes to language.ini: item_transfer, item_f5_gs1, item_f5_gs2
+See obj_eItems: End Step (1st script), User Defined 2
+
+*Class Editor: Replaced unknowns with Vulnerabilities!
+
+*Problems with opening the ROM in the editor due to trying to load the language file from the ROM's directory.
+Correction made in obj_editor_sys: User Defined 13
+
+*Attempt to fix data alignment issue where the game wouldn't start.
+Corrections made in DLL: confirmspace, claimspace
+
+*GS1 maps now read graphic maptile data as 12-bit. This fixes the Vale maps.
+Corrections made in obj_eMaps: User Defined 2, User Defined 3
+Maps like GS1's Alpine Crossing (74) are not fixed, and are most likely done via animated tiles.
+
+*NPC data shows up in Map Editor again!
+Corrections made in obj_sEvent: User Defined 9, Draw
+
+*Map Editor: Fixed Layer toggling/grid
+Corrections made in obj_eMaps: Draw (Script 1)
