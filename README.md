@@ -1,5 +1,7 @@
 # Golden Sun: The Lost Age Editor
 
+By Josh "Atrius" VH (http://goldensunhacking.net)
+
 ## To build
 
 ### Building GSdatahandler.dll
